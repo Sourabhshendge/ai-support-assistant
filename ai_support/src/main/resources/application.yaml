@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: ai_support
+
+
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/ai_support
+    username: root
+    password: asdfghjkl
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+
+      chat:
+        model: phi3:mini
+
+      embedding:
+        model: nomic-embed-text
+
+jwt:
+  secret: mysecretkeymysecretkeymysecretkey
+
+server:
+  port: 8082
